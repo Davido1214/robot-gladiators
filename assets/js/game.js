@@ -178,8 +178,21 @@ var randomNumber = function(min, max) {
   return value;
 }
 
+//function to set the name 
+var getPlayerName = function() {
+  var name = "";
+
+  //ADD LOOP HERE
+  while(name=== "" || name === "null") {
+    name = prompt("what is Your Robots name?")
+  }
+
+  console.log("Your Robots name is" + name);
+  return name;
+}
+
 var playerInfo = {
-  name: window.prompt("What is your Robots Name?"),
+  name: getPlayerName(),
   health: 100,
   attack: 10,
   money: 10,
